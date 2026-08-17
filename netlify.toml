@@ -1,0 +1,20 @@
+[build]
+  publish = "build/web"
+  command = """
+    if [ ! -d "$HOME/flutter" ]; then
+      git clone https://github.com/flutter/flutter.git -b 3.41.5 --depth 1 "$HOME/flutter"
+    fi
+    export PATH="$HOME/flutter/bin:$PATH"
+    flutter --version
+    flutter pub get
+    flutter build web --release --base-href /
+  """
+
+# Netlify serves at the domain root, so the base href is "/" here — unlike the
+# GitHub Pages deploy, which lives under /Pushparaj_Flutter_Developer_Portfolio/.
+
+# Serve index.html for unknown paths so deep links reach the Flutter router.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
