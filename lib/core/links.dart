@@ -15,13 +15,15 @@ class Links {
     }
   }
 
-  static Future<void> phone() => open('tel:${SiteConfig.phone.replaceAll(' ', '')}');
+  static Future<void> phone() =>
+      open('tel:${SiteConfig.phone.replaceAll(' ', '')}');
   static Future<void> email() => open('mailto:${SiteConfig.email}');
-  static Future<void> whatsapp() => open('https://wa.me/${SiteConfig.whatsapp}');
+  static Future<void> whatsapp() =>
+      open('https://wa.me/${SiteConfig.whatsapp}');
   static Future<void> linkedin() => open(SiteConfig.linkedin);
   static Future<void> github() => open(SiteConfig.github);
 
   /// The resume ships as a bundled asset, so it resolves under `assets/` on the
   /// deployed web build.
-  static Future<void> resume() => open('assets/${SiteConfig.resumeFile}');
+  static Future<void> resume() => open('${SiteConfig.resumeFile}');
 }
