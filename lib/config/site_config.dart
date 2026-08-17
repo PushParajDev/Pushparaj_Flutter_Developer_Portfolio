@@ -145,7 +145,7 @@ class SiteConfig {
   static const String portfolio = 'https://your-portfolio-domain.com'; // TODO
   static const String instagram = 'https://instagram.com/'; // TODO
   static const String resumeFile =
-      'assets/resume/Philemon_Pushparaj_Flutter_Developer_4Yr_Exp.pdf';
+      'assets/resume/Philemon Pushparaj_Flutter_Developer _4_Yr_Exp .pdf';
 
   // ---------- Hero stats (About section counters) ----------
   static const List<Stat> stats = [
