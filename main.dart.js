@@ -22539,7 +22539,7 @@ atJ(){return A.mC("tel:"+A.aep("+91 8825739779"," ",""))},
 atH(){return A.mC("mailto:jpushparaj2021@gmail.com")},
 atL(){return A.mC("https://wa.me/918825739779")},
 atI(){return A.mC("https://www.linkedin.com/in/j-philemon-pushparaj-85bb9a28b/")},
-atK(){return A.mC("assets/resume/Philemon Pushparaj_Flutter_Developer _4_Yr_Exp.pdf")},
+atK(){return A.mC("assets/assets/resume/Philemon Pushparaj_Flutter_Developer _4_Yr_Exp.pdf")},
 atz(a){var s,r,q=A.c([],t.s)
 for(s=0;s<a.length;++s){r=a.key(s)
 r.toString
